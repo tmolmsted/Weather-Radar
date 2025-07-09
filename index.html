@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Live Radar – WeatherOps</title>
-  <meta http-equiv="refresh" content="1800"> <!-- Optional auto-refresh every 30 min -->
+  <title>TC Metro Radar Only</title>
+  <meta http-equiv="refresh" content="600">
   <style>
-    html, body {
+    html, body, iframe {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden;
-      background: #000;
-    }
-
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       border: none;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
   <iframe
-    src="https://display.weatherops.com/4b574003-f508-4c0b-bd9b-70aa031c66be"
-    allowfullscreen>
+    src="https://embed.windy.com/embed2.html?lat=44.9&lon=-93.1&zoom=8&level=surface&overlay=radar&menu=false&message=false&marker=false&calendar=now&pressure=false&type=roadmap&location=coordinates&detailLat=44.9&detailLon=-93.1&detail=false&metricWind=default&metricTemp=default&radarRange=-1"
+    frameborder="0"
+    width="100%"
+    height="100%">
   </iframe>
 </body>
 </html>
